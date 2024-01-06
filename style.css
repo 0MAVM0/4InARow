@@ -1,9 +1,8 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: Arial, sans-serif;
 }
 .board {
     display: grid;
@@ -24,4 +23,8 @@ body {
 }
 .yellow {
     background-color: #ffdc00;
+}
+.message {
+    margin-top: 20px;
+    font-size: 18px;
 }
