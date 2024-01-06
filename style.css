@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    grid-template-rows: repeat(6, 80px);
+    gap: 5px;
+    border: 2px solid #333;
+}
+.cell {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.red {
+    background-color: #ff4136;
+}
+.yellow {
+    background-color: #ffdc00;
+}
