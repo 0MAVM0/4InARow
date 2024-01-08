@@ -107,9 +107,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     cell.classList.add(currentPlayer);
 
                     if (checkForWin()) {
-                        endGame(`Player ${currentPlayer === 'red' ? 'red' : 'yellow'} won!`);
+                        endGame(alert(`Player ${currentPlayer === 'red' ? 'red' : 'yellow'} won!`));
                     } else if (checkForDraw()) {
-                        endGame('Draw!');
+                        endGame(alert('Draw!'));
                     } else {
                         currentPlayer = currentPlayer === 'red' ? 'yellow' : 'red';
                         currentPlayerDisplay.textContent = currentPlayer;
